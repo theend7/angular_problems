@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'libc-ro',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ro.component.scss']
 })
 export class RoComponent implements OnInit {
+
+  @Input() public value: string | undefined;
+  @Output() public valueChange: EventEmitter<string> = new EventEmitter<string>();
 
   constructor() { }
 
