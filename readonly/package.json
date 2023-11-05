@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:webapp": "ng build webapp && ng serve webapp --port 4201"
   },
   "private": true,
   "dependencies": {
